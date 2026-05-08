@@ -658,27 +658,6 @@ function Hero() {
 
   return (
     <section className="relative bg-brand-crema h-[80vh] min-h-[600px] overflow-hidden">
-      {/* Background Images Layer */}
-      <div className="absolute inset-0 z-0">
-        {HERO_SLIDES.map((slide, index) => (
-          <motion.div
-            key={index}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: current === index ? 1 : 0 }}
-            transition={{ duration: 1.5 }}
-            className="absolute inset-0"
-          >
-            {/* Conditional Overlay based on slide.vibrant */}
-            <div className={`absolute inset-0 z-10 ${slide.vibrant ? 'bg-gradient-to-r from-brand-crema/60 via-brand-crema/20 to-transparent' : 'bg-brand-crema/85'}`}></div>
-            <img 
-              src={slide.image} 
-              className={`w-full h-full object-cover transition-all duration-1000 ${slide.vibrant ? 'grayscale-0 opacity-100 blur-0' : 'grayscale opacity-40 blur-[1px]'}`} 
-              alt="" 
-            />
-          </motion.div>
-        ))}
-      </div>
-
       <div className="max-w-7xl mx-auto px-10 h-full relative z-10 flex flex-col justify-center">
         <div className="relative h-[450px] flex flex-col justify-center">
           {HERO_SLIDES.map((slide, index) => (
