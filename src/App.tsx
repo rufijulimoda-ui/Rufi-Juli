@@ -935,7 +935,7 @@ function Footer() {
               © 2026 RUFI & JULI<br className="sm:hidden" /> • MODA QUE NOS UNE
            </p>
            <p className="font-sans text-[10px] text-ink opacity-40 tracking-widest uppercase text-left">
-              Showroom: Jáuregui, Luján
+              Showroom: Pueblo Nuevo, Luján
            </p>
          </div>
          <div className="flex gap-4 ml-0 lg:ml-4">
