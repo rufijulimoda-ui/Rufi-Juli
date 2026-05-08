@@ -5,11 +5,12 @@ import { Instagram, MessageCircle, Truck, RefreshCw, CreditCard, Search, Heart, 
 // --- Assets (Placeholders) ---
 const HERO_SLIDES = [
   {
-    image: "https://images.unsplash.com/photo-1539109132314-34a936699561?auto=format&fit=crop&q=80&w=1200",
+    image: "https://lh3.googleusercontent.com/d/1Zu9G4uNn-JFvH5ya8SNGxkf2BusBAGaN",
     title: "Nueva Colección",
     subtitle: "Otoño Invierno",
     tag: "Otoño / Invierno 2026",
-    text: "Prendas diseñadas para perdurar en el tiempo, uniendo calidad y estilo. Piezas exclusivas para tu guardarropa esencial."
+    text: "Prendas diseñadas para perdurar en el tiempo, uniendo calidad y estilo. Piezas exclusivas para tu guardarropa esencial.",
+    vibrant: true
   },
   {
     image: "https://images.unsplash.com/photo-1509631179647-0177331693ae?auto=format&fit=crop&q=80&w=1200",
@@ -185,11 +186,46 @@ const SECTIONS_DATA = [
     title: "Blazers",
     tag: "Sastrería Contemporánea",
     products: [
-      { name: "Blazer Tailored Black", price: 185000, img: "https://images.unsplash.com/photo-1591047139829-d91aecb6caea?auto=format&fit=crop&q=80&w=600" },
-      { name: "Blazer Lino Crudo", price: 175000, img: "https://images.unsplash.com/photo-1548883354-94bcfe321cbb?auto=format&fit=crop&q=80&w=600" },
-      { name: "Saco Oversize Camel", price: 195000, img: "https://images.unsplash.com/photo-1544441893-675973e31985?auto=format&fit=crop&q=80&w=600" },
-      { name: "Blazer Tweed", price: 190000, img: "https://images.unsplash.com/photo-1594938298603-c8148c4dae3d?auto=format&fit=crop&q=80&w=600" },
-      { name: "Blazer Soft Sand", price: 178000, img: "https://images.unsplash.com/photo-1551488831-00ddcb6c6bd3?auto=format&fit=crop&q=80&w=600" },
+      { 
+        name: "Blazer RUFI", 
+        price: 95000, 
+        img: "https://lh3.googleusercontent.com/d/1o_QOd2pxCUe8bYvJaNYgRRE73uHmevKl",
+        images: [
+          "https://lh3.googleusercontent.com/d/1o_QOd2pxCUe8bYvJaNYgRRE73uHmevKl",
+          "https://lh3.googleusercontent.com/d/1Kw9_8bVoI3mTQwsXIfdDBZplb4pHX-Fn",
+          "https://lh3.googleusercontent.com/d/1CxVQGOfX-xBWIUAegqoV-bnge8hlMrcG"
+        ]
+      },
+      { 
+        name: "Blazer JULI", 
+        price: 95000, 
+        img: "https://lh3.googleusercontent.com/d/1lt67KuoFvvAWjS5gefYzPbCEHlIBeNpb",
+        images: [
+          "https://lh3.googleusercontent.com/d/1lt67KuoFvvAWjS5gefYzPbCEHlIBeNpb",
+          "https://lh3.googleusercontent.com/d/1Dgyn1DpsgJr7cxqUIpiD_5sI-CacNrdZ",
+          "https://lh3.googleusercontent.com/d/1LHM_lq_MqiKBb01lJ3ELeQPGPKk1ErWh"
+        ]
+      },
+      { 
+        name: "Blazer MARA", 
+        price: 95000, 
+        img: "https://lh3.googleusercontent.com/d/1Cf8gJXzk9XEjPah3kjrRge4NfPPXw7M7",
+        images: [
+          "https://lh3.googleusercontent.com/d/1Cf8gJXzk9XEjPah3kjrRge4NfPPXw7M7",
+          "https://lh3.googleusercontent.com/d/1ek2A2DT7roAJRa79O5_XMTdb3_8MFJ5L",
+          "https://lh3.googleusercontent.com/d/1hIJ2l70fxXE0pxqdpIkdCAesTR_cqavi"
+        ]
+      },
+      { 
+        name: "Blazer LARA", 
+        price: 95000, 
+        img: "https://lh3.googleusercontent.com/d/1rFQiO6-bQKVcchc8IKjSHp5PF_2yXq0A",
+        images: [
+          "https://lh3.googleusercontent.com/d/1rFQiO6-bQKVcchc8IKjSHp5PF_2yXq0A",
+          "https://lh3.googleusercontent.com/d/1i3YEef0TKoJy-bFpwX8XUWUjHtoFlTHd",
+          "https://lh3.googleusercontent.com/d/1YbBVbaTzUXgfkkshcG3gRbqvZAa1UBc9"
+        ]
+      },
     ]
   },
   {
@@ -262,11 +298,96 @@ const SECTIONS_DATA = [
     title: "Pantalones y Polleras",
     tag: "Siluetas Definidas",
     products: [
-      { name: "Pantalon Wide Leg", price: 115000, img: "https://images.unsplash.com/photo-1594633312681-425c7b97ccd1?auto=format&fit=crop&q=80&w=600" },
-      { name: "Pollera Midi Satin", price: 98000, img: "https://images.unsplash.com/photo-1583496661160-fb5886a0aaaa?auto=format&fit=crop&q=80&w=600" },
-      { name: "Jean Straight Blue", price: 125000, img: "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&q=80&w=600" },
-      { name: "Pantalon Sastrero", price: 130000, img: "https://images.unsplash.com/photo-1509551388413-e18d0ac5d495?auto=format&fit=crop&q=80&w=600" },
-      { name: "Jean Blanco", price: 118000, img: "https://images.unsplash.com/photo-1576708441919-8355efbc0a16?auto=format&fit=crop&q=80&w=600" },
+      { 
+        name: "Jean ANCHO elastizado", 
+        price: 68000, 
+        img: "https://lh3.googleusercontent.com/d/16Zr00JVDeX7NhaCRhpNLzSdcnQ5lZK05",
+        images: [
+          "https://lh3.googleusercontent.com/d/16Zr00JVDeX7NhaCRhpNLzSdcnQ5lZK05",
+          "https://lh3.googleusercontent.com/d/1WXJkPWfKYkExXg1t9rswI50CLZvR9Z9G",
+          "https://lh3.googleusercontent.com/d/1zZyf6KIlPewft0UPteqGPRkJIPW7GU1R"
+        ]
+      },
+      {
+        name: "Pantalón negro brillante",
+        price: 68000,
+        img: "https://lh3.googleusercontent.com/d/1Q-ah59LUv9skjGYYDFcphlzAamYt5OPD",
+        images: [
+          "https://lh3.googleusercontent.com/d/1Q-ah59LUv9skjGYYDFcphlzAamYt5OPD",
+          "https://lh3.googleusercontent.com/d/17EkKVC6UnrrMk8x2ld8SuQ150mmFnOgY",
+          "https://lh3.googleusercontent.com/d/1fMB5Vt1dwU5qxAie2qx9dsvbGVe13bSa"
+        ]
+      },
+      {
+        name: "Pantalón ANCHO oscuro",
+        price: 85000,
+        img: "https://lh3.googleusercontent.com/d/1xbWvZbWNjoTwznQ2qyuou2npqNNA5-fy",
+        images: [
+          "https://lh3.googleusercontent.com/d/1xbWvZbWNjoTwznQ2qyuou2npqNNA5-fy",
+          "https://lh3.googleusercontent.com/d/1Y0DOr0sD778REnjXQplfEyc7tHcDcAQW",
+          "https://lh3.googleusercontent.com/d/1EVoxs3k1OG13WVnJnfElM6Pfm0vlpM8O"
+        ]
+      },
+      {
+        name: "Pantalón ANCHO claro",
+        price: 85000,
+        img: "https://lh3.googleusercontent.com/d/1e2D_fBVAAoX5uk-RjbmKe-JbjLElcckx",
+        images: [
+          "https://lh3.googleusercontent.com/d/1e2D_fBVAAoX5uk-RjbmKe-JbjLElcckx",
+          "https://lh3.googleusercontent.com/d/1OI2TJsN26R9zNQU3_F1Sew51YxOue9pM",
+          "https://lh3.googleusercontent.com/d/14L7Jv-wHM3N6UOGHBigV6ykGhvNFOr8N"
+        ]
+      },
+      {
+        name: "Pantalón ANCHO mostaza",
+        price: 68000,
+        img: "https://lh3.googleusercontent.com/d/1uCIbms7wpcxpFpJhi5VcNHr0ceuyjxLt",
+        images: [
+          "https://lh3.googleusercontent.com/d/1uCIbms7wpcxpFpJhi5VcNHr0ceuyjxLt",
+          "https://lh3.googleusercontent.com/d/1m8rsbyRooKW6MjUlw_qVN4tcP3Pwvd-0",
+          "https://lh3.googleusercontent.com/d/1-xMHLgpDplsW0vFFqiYX9T5EswgcDoLQ"
+        ]
+      },
+      {
+        name: "Jean OXFORD",
+        price: 79000,
+        img: "https://lh3.googleusercontent.com/d/1flBw3iudQ4TV69mPYYm1s1BQqLJVyIYn",
+        images: [
+          "https://lh3.googleusercontent.com/d/1flBw3iudQ4TV69mPYYm1s1BQqLJVyIYn",
+          "https://lh3.googleusercontent.com/d/1SySW7bAPKmiqsH_00F2hDCQ_rTYV11-m",
+          "https://lh3.googleusercontent.com/d/1ZNnaIN0gYafhmbHnJIjpiTn6JCvVz_ux"
+        ]
+      },
+      {
+        name: "Pantalón KANDE beige",
+        price: 65000,
+        img: "https://lh3.googleusercontent.com/d/1t1N5dXKiS2TZRvjjNKWrUvR5EuGiZvdv",
+        images: [
+          "https://lh3.googleusercontent.com/d/1t1N5dXKiS2TZRvjjNKWrUvR5EuGiZvdv",
+          "https://lh3.googleusercontent.com/d/1DAJPnrD5qeiuZogrBZOBCVtLD5PrIYy2",
+          "https://lh3.googleusercontent.com/d/1St8oFnn9e1u3TBbXuVArJT9sKKH4fOKM"
+        ]
+      },
+      {
+        name: "Pantalón KANDE gris",
+        price: 65000,
+        img: "https://lh3.googleusercontent.com/d/1nUXnI6aaVZxwob24NVGf8xNrGW3fnOyf",
+        images: [
+          "https://lh3.googleusercontent.com/d/1nUXnI6aaVZxwob24NVGf8xNrGW3fnOyf",
+          "https://lh3.googleusercontent.com/d/12Fbu1MCFgCbHe3H0yAh7xvESCqEyFWZ1",
+          "https://lh3.googleusercontent.com/d/1A1TsNmhGi2wb8lJdjPrM5Rk40g4u6hCW"
+        ]
+      },
+      {
+        name: "Pollera FLECOS mostaza",
+        price: 65000,
+        img: "https://lh3.googleusercontent.com/d/1ByRXOWZnQ6O0MZ9-UCmATO4GccNOeUcC",
+        images: [
+          "https://lh3.googleusercontent.com/d/1ByRXOWZnQ6O0MZ9-UCmATO4GccNOeUcC",
+          "https://lh3.googleusercontent.com/d/1Dr1haoKnwS9cavIYn610wl2_Lr3Ih4Ii",
+          "https://lh3.googleusercontent.com/d/1t9x81-KQ-9F4WtsbHN5FM2qkxnAhz5b2"
+        ]
+      },
     ]
   },
   {
@@ -470,10 +591,29 @@ const SECTIONS_DATA = [
 
 // --- Components ---
 
+function Logo({ className = "" }: { className?: string }) {
+  return (
+    <div className={`flex flex-col items-center py-2 ${className}`}>
+      <div className="font-display text-2xl lg:text-3xl text-brand-borgona leading-none italic flex items-center gap-2">
+        <span>Rufi</span>
+        <span className="text-brand-malva font-light not-italic">&</span>
+        <span>Juli</span>
+      </div>
+      <div className="font-sans text-[8px] tracking-[0.3em] text-ink opacity-60 uppercase mt-1">
+        Moda que nos une
+      </div>
+      <div className="flex items-center gap-2 mt-0.5 opacity-40">
+        <div className="h-[0.5px] w-4 bg-ink"></div>
+        <span className="text-brand-malva text-[8px]">♥</span>
+        <div className="h-[0.5px] w-4 bg-ink"></div>
+      </div>
+    </div>
+  );
+}
+
 function AnnouncementBar() {
   return (
     <div className="bg-brand-malva text-white h-8 flex items-center justify-center text-[10px] sm:text-[11px] font-sans font-semibold tracking-[0.1em] uppercase">
-      3 CUOTAS SIN INTERÉS • ENVÍO GRATIS EN COMPRAS SUPERIORES A $90.000
     </div>
   );
 }
@@ -483,21 +623,7 @@ function Navbar() {
     <nav className="sticky top-0 z-50 bg-white border-b border-brand-rosapalo backdrop-blur-md bg-white/90 shadow-sm">
       <div className="max-w-7xl mx-auto px-10 h-24 flex items-center justify-between">
         {/* Logo */}
-        <div className="flex flex-col items-center py-2">
-          <div className="font-display text-2xl lg:text-3xl text-brand-borgona leading-none italic flex items-center gap-2">
-            <span>Rufi</span>
-            <span className="text-brand-malva font-light not-italic">&</span>
-            <span>Juli</span>
-          </div>
-          <div className="font-sans text-[8px] tracking-[0.3em] text-ink opacity-60 uppercase mt-1">
-            Moda que nos une
-          </div>
-          <div className="flex items-center gap-2 mt-0.5 opacity-40">
-            <div className="h-[0.5px] w-4 bg-ink"></div>
-            <span className="text-brand-malva text-[8px]">♥</span>
-            <div className="h-[0.5px] w-4 bg-ink"></div>
-          </div>
-        </div>
+        <Logo />
 
         {/* Links */}
         <div className="hidden md:flex items-center gap-8">
@@ -512,10 +638,8 @@ function Navbar() {
           ))}
         </div>
 
-        {/* Icons */}
+        {/* Icons Removed */}
         <div className="flex items-center gap-6 text-ink">
-           <span className="font-sans text-[11px] font-bold tracking-[0.1em] cursor-pointer">BUSCAR</span>
-           <ShoppingBag size={18} className="cursor-pointer hover:text-brand-rosapalo transition-colors" strokeWidth={1.5} />
         </div>
       </div>
     </nav>
@@ -579,12 +703,6 @@ function Hero() {
                 {slide.text}
               </p>
               <div className="mt-2 text-left">
-                <a 
-                  href="#coleccion" 
-                  className="font-sans text-sm font-bold tracking-[0.2em] text-ink underline hero-cta-underline uppercase"
-                >
-                  EXPLORAR
-                </a>
               </div>
             </motion.div>
           ))}
@@ -688,7 +806,7 @@ function ProductDetail({ product, onClose }: { product: Product, onClose: () => 
               <div 
                 key={i} 
                 onClick={() => setActiveImage(img)}
-                className={`aspect-[3/4] border transition-all cursor-pointer overflow-hidden ${activeImage === img ? 'border-brand-borgona' : 'border-brand-rosapalo/5 hover:border-brand-rosapalo/30'}`}
+                className={`aspect-[3/4] border transition-all cursor-pointer overflow-hidden ${activeImage === img ? 'border-brand-borgona' : 'border-stone-100 hover:border-stone-300'}`}
               >
                 <img src={img} className="w-full h-full object-cover" alt="" />
               </div>
@@ -697,7 +815,7 @@ function ProductDetail({ product, onClose }: { product: Product, onClose: () => 
 
           {/* Main Image (Center) */}
           <div className="lg:col-span-6 flex items-start">
-            <div className="aspect-[3/4] w-full bg-[#fcfcfc] border border-brand-rosapalo/5 overflow-hidden">
+            <div className="aspect-[3/4] w-full bg-[#fcfcfc] border border-stone-100 overflow-hidden">
               <img src={activeImage} className="w-full h-full object-cover transition-all duration-500" alt={product.name} />
             </div>
           </div>
@@ -708,7 +826,7 @@ function ProductDetail({ product, onClose }: { product: Product, onClose: () => 
               <div 
                 key={i} 
                 onClick={() => setActiveImage(img)}
-                className={`aspect-[3/4] w-20 flex-shrink-0 border ${activeImage === img ? 'border-brand-borgona' : 'border-brand-rosapalo/5'}`}
+                className={`aspect-[3/4] w-20 flex-shrink-0 border ${activeImage === img ? 'border-brand-borgona' : 'border-stone-100'}`}
               >
                  <img src={img} className="w-full h-full object-cover" alt="" />
               </div>
@@ -730,7 +848,7 @@ function ProductDetail({ product, onClose }: { product: Product, onClose: () => 
             {/* Actions - Display only */}
             <div className="mb-12">
               <a 
-                href={`https://wa.me/yournumber?text=Hola! Me gustaría consultar por ${product.name}`} 
+                href={`https://wa.me/5491130981544?text=Hola! Me gustaría consultar por ${product.name}`} 
                 target="_blank"
                 rel="noreferrer"
                 className="inline-block w-full bg-brand-borgona text-white font-sans text-[10px] tracking-[0.3em] font-bold py-5 hover:bg-brand-malva transition-colors uppercase text-center shadow-lg"
@@ -740,7 +858,7 @@ function ProductDetail({ product, onClose }: { product: Product, onClose: () => 
             </div>
 
             {/* Extra Info */}
-            <div className="border-t border-brand-rosapalo/5 pt-8 space-y-8">
+            <div className="border-t border-stone-100 pt-8 space-y-8">
             </div>
           </div>
         </div>
@@ -760,7 +878,7 @@ function CategorySection({ title, products, onProductClick }: CategorySectionPro
   );
 
   return (
-    <section id={title.toLowerCase().split(' ')[0]} className="bg-white py-6 border-b border-brand-rosapalo/5 overflow-hidden">
+    <section id={title.toLowerCase().split(' ')[0]} className="bg-white py-6 border-b border-stone-100 overflow-hidden">
       <div className="max-w-7xl mx-auto px-10 text-center">
         {/* Ultra Minimal Title */}
         <h2 className="font-display text-base tracking-[0.2em] text-brand-borgona mb-8 uppercase font-bold">
@@ -786,7 +904,6 @@ function CategorySection({ title, products, onProductClick }: CategorySectionPro
                 <div className="flex flex-col items-center">
                   <h3 className="font-sans text-[10px] tracking-[0.05em] text-ink uppercase mb-1">{product.name}</h3>
                   <p className="font-sans font-bold text-[10px] text-ink/80 mb-1">$ {product.price.toLocaleString()}</p>
-                  <p className="font-sans text-[8px] text-brand-malva/50 uppercase tracking-tighter">6 cuotas sin interés de ${(product.price/6).toLocaleString()}</p>
                 </div>
               </motion.div>
             );
@@ -820,34 +937,31 @@ function CategorySection({ title, products, onProductClick }: CategorySectionPro
 
 function Footer() {
   return (
-    <footer className="bg-[#fcfcfc] border-t border-brand-crema px-10 h-auto lg:min-h-[100px] flex flex-col lg:flex-row items-center justify-between py-12 lg:py-0">
-      <div className="flex flex-col lg:flex-row gap-8 items-center lg:items-start mb-8 lg:mb-0">
-         <h2 className="font-sans text-sm font-bold tracking-[0.1em] text-brand-borgona uppercase">Rufi & Juli</h2>
-         <div className="hidden lg:block w-[1px] h-4 bg-brand-rosapalo opacity-30 mt-1"></div>
-         <p className="font-sans text-[10px] text-ink opacity-40 tracking-widest uppercase">
-            © 2026 RUFI & JULI • MODA QUE NOS UNE
+    <footer className="bg-[#fcfcfc] border-t border-brand-crema px-10 h-auto lg:min-h-[150px] flex flex-col lg:flex-row items-center justify-between py-12 lg:py-0">
+      <div className="flex flex-col lg:flex-row gap-8 items-center mb-8 lg:mb-0">
+         <Logo />
+         <div className="hidden lg:block w-[1px] h-10 bg-brand-rosapalo opacity-30 mt-1"></div>
+         <p className="font-sans text-[10px] text-ink opacity-40 tracking-widest uppercase text-center lg:text-left">
+            © 2026 RUFI & JULI<br className="sm:hidden" /> • MODA QUE NOS UNE
          </p>
       </div>
 
       <div className="flex flex-col sm:flex-row items-center gap-10">
-        <div className="flex items-center">
-          <input 
-            type="email" 
-            placeholder="Novedades en tu correo" 
-            className="bg-transparent border-b border-ink/30 py-2 text-[11px] focus:outline-none focus:border-brand-borgona placeholder:opacity-40 font-sans w-52 tracking-wider transition-colors"
-          />
-          <button className="font-sans text-[10px] font-bold tracking-[0.2em] text-ink ml-4 hover:text-brand-borgona transition-colors uppercase">UNIRSE</button>
-        </div>
+
         
         <div className="flex gap-4">
-           <Instagram size={18} className="text-ink opacity-60 hover:opacity-100 cursor-pointer transition-opacity" />
-           <MessageCircle size={18} className="text-ink opacity-60 hover:opacity-100 cursor-pointer transition-opacity" />
+           <a href="https://www.instagram.com/rufi.juli.moda/" target="_blank" rel="noreferrer">
+             <Instagram size={18} className="text-ink opacity-60 hover:opacity-100 cursor-pointer transition-opacity" />
+           </a>
+           <a href="https://wa.me/5491130981544" target="_blank" rel="noreferrer">
+             <MessageCircle size={18} className="text-ink opacity-60 hover:opacity-100 cursor-pointer transition-opacity" />
+           </a>
         </div>
       </div>
       
       {/* WhatsApp Button */}
       <a 
-        href="https://wa.me/yournumber" 
+        href="https://wa.me/5491130981544" 
         target="_blank" 
         rel="noopener noreferrer"
         className="fixed bottom-10 right-10 z-[100]"
