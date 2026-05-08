@@ -595,6 +595,26 @@ const SECTIONS_DATA = [
           "https://lh3.googleusercontent.com/d/1Syrc85ad6ysxzi3IS2o5V0M5P3c8gTcE"
         ]
       },
+      { 
+        name: "Sweater LoLa negro", 
+        price: 50000, 
+        img: "https://lh3.googleusercontent.com/d/1lroKDWL3SgVYaCyQ-5iTJSjvefELTMrd",
+        images: [
+          "https://lh3.googleusercontent.com/d/1lroKDWL3SgVYaCyQ-5iTJSjvefELTMrd",
+          "https://lh3.googleusercontent.com/d/1KSvriFk8eWGTdGyY7P5B5daLsg5EYDEd",
+          "https://lh3.googleusercontent.com/d/1QgBmpoWFp_IswIVYp0H-IBxITx5hQg0e"
+        ]
+      },
+      { 
+        name: "Sweater LoLa gris", 
+        price: 50000, 
+        img: "https://lh3.googleusercontent.com/d/1gh0ud-5Dvq0aKWOu-fBz3DpUQ-CAuDpk",
+        images: [
+          "https://lh3.googleusercontent.com/d/1gh0ud-5Dvq0aKWOu-fBz3DpUQ-CAuDpk",
+          "https://lh3.googleusercontent.com/d/1WTlZMa2LfCD9RQByLcXO4SF-Pl94yP5x",
+          "https://lh3.googleusercontent.com/d/1JlsqaIxvKiRS6BpW3BQMYrB5JINL4ubA"
+        ]
+      },
     ]
   }
 ];
@@ -730,7 +750,6 @@ function EditorialBanner() {
 function ServiceIcons() {
   const services = [
     { title: "ENVÍOS A TODO EL PAÍS" },
-    { title: "CAMBIOS SIN CARGO" },
     { title: "ATENCIÓN PERSONALIZADA" },
   ];
 
