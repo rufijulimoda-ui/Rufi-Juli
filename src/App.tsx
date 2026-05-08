@@ -483,7 +483,7 @@ const SECTIONS_DATA = [
       },
       { 
         name: "Campera CUERO negra", 
-        price: 85000, 
+        price: 76000, 
         img: "https://lh3.googleusercontent.com/d/1uCNsflsWb8BHjZ8LHdmAe9ILBW82vV6m",
         images: [
           "https://lh3.googleusercontent.com/d/1uCNsflsWb8BHjZ8LHdmAe9ILBW82vV6m",
@@ -578,7 +578,7 @@ const SECTIONS_DATA = [
       },
       { 
         name: "Campera jean BRILLOS", 
-        price: 69000, 
+        price: 65000, 
         img: "https://lh3.googleusercontent.com/d/1yRiddfCrioIrSsdy68aXnRnLKIXT0Vah",
         images: [
           "https://lh3.googleusercontent.com/d/1yRiddfCrioIrSsdy68aXnRnLKIXT0Vah",
