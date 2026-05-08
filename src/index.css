@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Jost:ital,wght@0,100..900;1,100..900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-display: "Cormorant Garamond", serif;
+  --font-sans: "Jost", sans-serif;
+
+  --color-brand-borgona: #6B1F3E;
+  --color-brand-malva: #8C6F8E;
+  --color-brand-rosapalo: #C9A0A0;
+  --color-brand-crema: #E8D8CC;
+  --color-brand-orooliva: #B5A030;
+  --color-ink: #1a1a1a;
+}
+
+@layer base {
+  body {
+    @apply font-sans text-ink bg-white antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-display italic;
+  }
+}
+
+.editorial-grid {
+  @apply grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10;
+}
+
+.product-card-aligned {
+  @apply mt-0;
+}
+
+.hero-cta-underline {
+  @apply decoration-1 underline-offset-8 transition-all hover:underline-offset-4 font-sans uppercase;
+}
