@@ -930,9 +930,14 @@ function Footer() {
       <div className="flex flex-col lg:flex-row gap-8 items-start lg:items-center mb-8 lg:mb-0">
          <Logo />
          <div className="hidden lg:block w-[1px] h-10 bg-brand-rosapalo opacity-30 mt-1"></div>
-         <p className="font-sans text-[10px] text-ink opacity-40 tracking-widest uppercase text-left">
-            © 2026 RUFI & JULI<br className="sm:hidden" /> • MODA QUE NOS UNE
-         </p>
+         <div className="flex flex-col gap-1">
+           <p className="font-sans text-[10px] text-ink opacity-40 tracking-widest uppercase text-left">
+              © 2026 RUFI & JULI<br className="sm:hidden" /> • MODA QUE NOS UNE
+           </p>
+           <p className="font-sans text-[10px] text-ink opacity-40 tracking-widest uppercase text-left">
+              Showroom: Jáuregui, Luján
+           </p>
+         </div>
          <div className="flex gap-4 ml-0 lg:ml-4">
             <a href="https://www.instagram.com/rufi.juli.moda/" target="_blank" rel="noreferrer">
               <Instagram size={18} className="text-ink opacity-60 hover:opacity-100 cursor-pointer transition-opacity" />
