@@ -388,6 +388,16 @@ const SECTIONS_DATA = [
           "https://lh3.googleusercontent.com/d/1t9x81-KQ-9F4WtsbHN5FM2qkxnAhz5b2"
         ]
       },
+      {
+        name: "Pantalón KANDE negro",
+        price: 65000,
+        img: "https://lh3.googleusercontent.com/d/1AvxHwAAmsb0dePCxVInW2jSLvImwk7gK",
+        images: [
+          "https://lh3.googleusercontent.com/d/1AvxHwAAmsb0dePCxVInW2jSLvImwk7gK",
+          "https://lh3.googleusercontent.com/d/1UWVzCXiFRGQ_BdI_aBRHupn4twlaNqp5",
+          "https://lh3.googleusercontent.com/d/1OpKgXSon1SWUvOyCP72XxYFRjs1nBVpx"
+        ]
+      },
     ]
   },
   {
@@ -787,7 +797,7 @@ function ProductDetail({ product, onClose }: { product: Product, onClose: () => 
                 onClick={() => setActiveImage(img)}
                 className={`aspect-[3/4] border transition-all cursor-pointer overflow-hidden ${activeImage === img ? 'border-brand-borgona' : 'border-stone-100 hover:border-stone-300'}`}
               >
-                <img src={img} className="w-full h-full object-cover" alt="" />
+                <img src={img} className="w-full h-full object-cover object-top" alt="" />
               </div>
             ))}
           </div>
@@ -795,7 +805,7 @@ function ProductDetail({ product, onClose }: { product: Product, onClose: () => 
           {/* Main Image (Center) */}
           <div className="lg:col-span-6 flex items-start">
             <div className="aspect-[3/4] w-full bg-[#fcfcfc] border border-stone-100 overflow-hidden">
-              <img src={activeImage} className="w-full h-full object-cover transition-all duration-500" alt={product.name} />
+              <img src={activeImage} className="w-full h-full object-cover object-top transition-all duration-500" alt={product.name} />
             </div>
           </div>
 
@@ -807,7 +817,7 @@ function ProductDetail({ product, onClose }: { product: Product, onClose: () => 
                 onClick={() => setActiveImage(img)}
                 className={`aspect-[3/4] w-20 flex-shrink-0 border ${activeImage === img ? 'border-brand-borgona' : 'border-stone-100'}`}
               >
-                 <img src={img} className="w-full h-full object-cover" alt="" />
+                 <img src={img} className="w-full h-full object-cover object-top" alt="" />
               </div>
             ))}
           </div>
@@ -877,7 +887,7 @@ function CategorySection({ title, products, onProductClick }: CategorySectionPro
                 onClick={() => onProductClick({...product, category: title})}
               >
                 <div className="relative overflow-hidden aspect-[4/5] bg-[#fcfcfc] mb-4">
-                  <img src={product.img} className="w-full h-full object-cover grayscale-10 group-hover:grayscale-0 transition-all duration-700" alt={product.name} />
+                  <img src={product.img} className="w-full h-full object-cover object-top grayscale-10 group-hover:grayscale-0 transition-all duration-700" alt={product.name} />
                 </div>
                 
                 <div className="flex flex-col items-center">
@@ -916,29 +926,23 @@ function CategorySection({ title, products, onProductClick }: CategorySectionPro
 
 function Footer() {
   return (
-    <footer className="bg-[#fcfcfc] border-t border-brand-crema px-10 h-auto lg:min-h-[150px] flex flex-col lg:flex-row items-center justify-between py-12 lg:py-0">
-      <div className="flex flex-col lg:flex-row gap-8 items-center mb-8 lg:mb-0">
+    <footer className="bg-[#fcfcfc] border-t border-brand-crema px-10 h-auto lg:min-h-[150px] flex flex-col lg:flex-row items-start lg:items-center justify-between py-12 lg:py-0">
+      <div className="flex flex-col lg:flex-row gap-8 items-start lg:items-center mb-8 lg:mb-0">
          <Logo />
          <div className="hidden lg:block w-[1px] h-10 bg-brand-rosapalo opacity-30 mt-1"></div>
-         <p className="font-sans text-[10px] text-ink opacity-40 tracking-widest uppercase text-center lg:text-left">
+         <p className="font-sans text-[10px] text-ink opacity-40 tracking-widest uppercase text-left">
             © 2026 RUFI & JULI<br className="sm:hidden" /> • MODA QUE NOS UNE
          </p>
+         <div className="flex gap-4 ml-0 lg:ml-4">
+            <a href="https://www.instagram.com/rufi.juli.moda/" target="_blank" rel="noreferrer">
+              <Instagram size={18} className="text-ink opacity-60 hover:opacity-100 cursor-pointer transition-opacity" />
+            </a>
+            <a href="https://wa.me/5491130981544" target="_blank" rel="noreferrer">
+              <MessageCircle size={18} className="text-ink opacity-60 hover:opacity-100 cursor-pointer transition-opacity" />
+            </a>
+         </div>
       </div>
 
-      <div className="flex flex-col sm:flex-row items-center gap-10">
-
-        
-        <div className="flex gap-4">
-           <a href="https://www.instagram.com/rufi.juli.moda/" target="_blank" rel="noreferrer">
-             <Instagram size={18} className="text-ink opacity-60 hover:opacity-100 cursor-pointer transition-opacity" />
-           </a>
-           <a href="https://wa.me/5491130981544" target="_blank" rel="noreferrer">
-             <MessageCircle size={18} className="text-ink opacity-60 hover:opacity-100 cursor-pointer transition-opacity" />
-           </a>
-        </div>
-      </div>
-      
-      {/* WhatsApp Button */}
       <a 
         href="https://wa.me/5491130981544" 
         target="_blank" 
