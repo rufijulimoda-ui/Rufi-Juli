@@ -922,18 +922,18 @@ function CategorySection({ title, products, onProductClick }: CategorySectionPro
         <div className="flex items-center justify-center gap-6 mt-8">
            <button 
               onClick={() => setCurrentPage((prev) => (prev - 1 + totalPages) % totalPages)}
-              className="text-ink/40 hover:text-ink transition-colors text-sm"
+              className="text-ink hover:opacity-50 active:scale-95 transition-all text-xl font-light w-8 h-8 flex items-center justify-center"
            >
               ←
            </button>
            
-           <span className="font-sans text-[9px] tracking-widest text-ink/30 tabular-nums">
+           <span className="font-sans text-sm font-light tracking-widest text-ink tabular-nums">
              {currentPage + 1} / {totalPages}
            </span>
 
            <button 
               onClick={() => setCurrentPage((prev) => (prev + 1) % totalPages)}
-              className="text-ink/40 hover:text-ink transition-colors text-sm"
+              className="text-ink hover:opacity-50 active:scale-95 transition-all text-xl font-light w-8 h-8 flex items-center justify-center"
            >
               →
            </button>
